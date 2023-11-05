@@ -1,2 +1,2 @@
-# test_site
+# Speech-Ease
 A test site for an assignment
