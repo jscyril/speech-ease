@@ -1,0 +1,55 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4eeff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #424874;
+}
+
+p {
+  font-size: 20px;
+  color: #a6b1e1;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #a6b1e1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #dcd6f7;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px; /* Reduce font size for smaller screens */
+  }
+
+  p {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  .btn {
+    padding: 10px 20px; /* Reduce button padding for smaller screens */
+    font-size: 18px; /* Reduce font size for smaller screens */
+  }
+}

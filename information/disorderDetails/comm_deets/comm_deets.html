@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Communication Details</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Communication Details</h1>
+      <form id="communication-form">
+        <div class="section">
+          <h2>Communication Details:</h2>
+          <label for="verbal"
+            >Is the child verbal, non-verbal, says a few words, or responds to
+            questions?</label
+          >
+          <select id="verbal" name="verbal">
+            <option value="verbal">Verbal</option>
+            <option value="non-verbal">Non-Verbal</option>
+            <option value="few-words">Says a few words</option>
+            <option value="responds-to-questions">Responds to questions</option>
+          </select>
+        </div>
+
+        <div class="section">
+          <h2>Social Details:</h2>
+          <label for="name">Can the child say his/her name?</label>
+          <select id="name" name="name">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <label for="basic-words">Can the child talk basic words?</label>
+          <select id="basic-words" name="basic-words">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="section">
+          <h2>Sound Development:</h2>
+          <label for="respond-noises">Does he/she respond to noises?</label>
+          <select id="respond-noises" name="respond-noises">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <label for="turn-look"
+            >Does he/she turn and look when they are called?</label
+          >
+          <select id="turn-look" name="turn-look">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <a href="./plan/plan.html" class="btn">Next</a>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4eeff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.content {
+  text-align: center;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #dcd6f7;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+h1 {
+  font-size: 28px;
+  color: #424874;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #a6b1e1;
+  margin-bottom: 20px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust the margin for spacing */
+}
+
+.loading {
+  border: 6px solid #a6b1e1;
+  border-top: 6px solid #424874;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+form {
+  text-align: left;
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #424874;
+  margin-top: 10px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #424874;
+  margin-top: 10px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #a6b1e1;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #a6b1e1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #dcd6f7;
+}
+
+.btn-created {
+  background-color: #424874;
+  color: #fff;
+}
+
+.redirecting-message {
+  font-size: 16px;
+  color: #424874;
+  margin-top: 20px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: flex-end; /* Align the loading circle at the end of the box */
+}
+
+.loading {
+  border: 6px solid #a6b1e1;
+  border-top: 6px solid #424874;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input[type="number"] {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .btn-created {
+    font-size: 16px;
+  }
+
+  .redirecting-message {
+    font-size: 14px;
+  }
+}
