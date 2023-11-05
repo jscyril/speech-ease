@@ -10,15 +10,6 @@ body {
 
 .content {
   text-align: center;
-}
-
-h1 {
-  font-size: 36px;
-  color: #424874;
-}
-
-form {
-  margin: 20px auto;
   max-width: 400px;
   padding: 20px;
   background-color: #dcd6f7;
@@ -26,24 +17,41 @@ form {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-label {
-  display: block;
-  font-size: 18px;
-  color: #424874;
-  margin-top: 10px;
+.celebration {
+  text-align: center;
+  margin-top: 20px;
 }
 
-select {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #a6b1e1;
-  border-radius: 10px;
-  font-size: 16px;
-  margin-top: 5px;
+h1 {
+  font-size: 32px;
+  color: #424874;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 24px;
+  color: #a6b1e1;
+  margin-bottom: 20px;
+}
+
+/* Add different animation for celebration */
+@keyframes scale {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.celebration h1,
+.celebration p {
+  animation: scale 1s ease-in-out forwards;
 }
 
 .btn {
-  display: inline-block;
+  display: block;
+  margin-top: 20px;
   padding: 12px 24px;
   background-color: #a6b1e1;
   color: #fff;
@@ -51,9 +59,19 @@ select {
   border-radius: 10px;
   font-size: 20px;
   transition: background-color 0.3s;
-  margin-top: 20px;
 }
 
 .btn:hover {
   background-color: #dcd6f7;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 20px;
+  }
 }
